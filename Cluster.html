@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ClusterKmeans</title>
+    <link rel="stylesheet" href="ClusterStyle.css">
+    <link rel="stylesheet" href="topnav.css">
+    <script src="ClusterJS.js" defer></script>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="#home"> <strong>Cluster Algorithm</strong></a>
+        <a href = 'genetic.html' ><strong>Genetic Algorithm </strong></a>
+        <a href = 'Astar.html'><strong>A* Algorithm </strong></a>
+        <a href = 'ant.html' ><strong>Ant+ Algorithm </strong></a>
+        <a href = 'antbasic.html'><strong>Ant basic Algorithm</strong></a>
+        <a href = 'DecisionTree.html'><strong>Decision Tree Algorithm</strong></a>
+    </div>
+    <div id="container">
+        <div id="btn-container">
+            <div id="random-container">
+                <button id="random" class="btn" type="button" onclick="randomUnits()">RANDOM</button>
+                <div id="unit-div" class="slider-container">
+                    <input id="n-slider" class="slider" type="range" min="1" max="100" value="30" autocomplete="off">
+                    <input id="n-value" class="value" type="text" value="30" autocomplete="off">
+                </div>
+            </div>
+            <div id="start-container">
+                <button id="start" class="btn" type="button" onclick="sliceOnClusters()">START</button>
+                <div id="kGroups-div" class="slider-container">
+                    <input id="k-slider" class="slider" type="range" min="1" max="10" value="3" autocomplete="off">
+                    <input id="k-value" class="value" type="text" value="3" autocomplete="off">
+                </div>
+            </div>
+        </div>
+        <div><canvas id="canvas" width="600" height="600"></canvas></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ant Algorithm</title>
+    <link rel="stylesheet" href="ant.css">
+    <script src="antnewnewnew.js" defer></script>
+</head>
+<body>
+    <div id ="bottomEraser" class = "bottom"> </div>
+    <div id="main-container">
+        <div id="display-container">
+            <div id="random-container">
+                <div id="alpha" class="titler">alpha value</div>
+                <div id="alphaS" class="slider-container">
+                    <input id="alphaSlider" class="slider" type="range" min="1" max="10" value="3" autocomplete="off">
+                    <input id="alphaValue" class="value" type="text" value="3" autocomplete="off">
+                </div>
+                <div id="beta" class="titler">beta value</div>
+                <div id="betaS" class="slider-container">
+                    <input id="betaSlider" class="slider" type="range" min="1" max="10" value="2" autocomplete="off">
+                    <input id="betaValue" class="value" type="text" value="2" autocomplete="off">
+                </div>
+                <div id="gamma" class="titler">gamma value</div>
+                <div id="gammaS" class="slider-container">
+                    <input id="gammaSlider" class="slider" type="range" min="1" max="10" value="1" autocomplete="off">
+                    <input id="gammaValue" class="value" type="text" value="1" autocomplete="off">
+                </div>
+                <div id="iterations" class="titler">iterations count</div>
+                <div id="iterationsS" class="slider-container">
+                    <input id="iterationsSlider" class="slider" type="range" min="100" max="10000" value="5000" autocomplete="off">
+                    <input id="iterationsValue" class="value" type="text" value="5000" autocomplete="off">
+                </div>
+                <div id="pheromones" class="titler">pheromones delay</div>
+                <div id="pheromonesS" class="slider-container">
+                    <input id="pheromonesSlider" class="slider" type="range" min="1" max="100" value="50" autocomplete="off">
+                    <input id="pheromonesValue" class="value" type="text" value="0.5" autocomplete="off">
+                </div>
+            </div>
+            <button class="btn" type="button" onclick="BottomSimulation()">Simulation</button>
+            <button id="btn-erase" class="btn" type="button" onclick="BottomEraser()">Eraser</button>
+            <button id="btn-erase" class="btn" type="button" onclick="BottomFood()">Food</button>
+            <button id="btn-erase" class="btn" type="button" onclick="BottomColony()">Colony</button>
+            <button id="btn-erase" class="btn" type="button" onclick="BottomWall()">Wall</button>
+        </div>
+        <div class="parent">
+            <div class="canvas_block" id="canv">
+                <canvas id="canvas"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

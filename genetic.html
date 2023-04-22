@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>genetic Algorithm</title>
+    <link rel="stylesheet" href="genetic.css">
+    <script src="gpast.js" defer></script>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="#home"> <strong>Genetic Algorithm </strong></a>
+        <a href = 'antbasic.html' ><strong>Ant basic Algorithm </strong></a>
+        <a href = 'Astar.html'><strong>A* Algorithm </strong></a>
+        <a href = 'Cluster.html'><strong>Cluster Algorithm </strong></a>
+        <a href = 'ant.html'><strong>Ant+ Algorithm</strong></a>
+        <a href = 'DecisionTree.html'><strong>Decision tree Algorithm</strong></a>
+      </div>
+    <div id="main-container">
+        <div id="display-container">
+            <div id="random-container">
+                <div id="population" class="titler">population size</div>
+                <div id="pop" class="slider-container">
+                    <input id="populationSlider" class="slider" type="range" min="15" max="500" value="15" autocomplete="off">
+                    <input id="populationValue" class="value" type="text" value="15" autocomplete="off">
+                </div>
+                <div id="generation" class="titler">generation size</div>
+                <div id="gen" class="slider-container">
+                    <input id="generationSlider" class="slider" type="range" min="100" max="10000" value="100" autocomplete="off">
+                    <input id="generationValue" class="value" type="text" value="100" autocomplete="off">
+                </div>
+            </div>
+            <button class="btn" type="button" onclick="StartBottom()">START</button>
+            <button id="btn-erase" class="btn" type="button" onclick="ClearBottom()">ERASE</button>
+        </div>
+        <div class="parent">
+            <div class="canvas_block" id="canv">
+                <canvas id="canvas"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

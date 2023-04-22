@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="DecisionTreeJS.js" defer></script>
+    <link rel="stylesheet" href="DecisionTreeStyle.css">
+    <link rel="stylesheet" href="topnav.css">
+    <title>DecisionTree</title>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="#home"> <strong>Decision Tree Algorithm</strong></a>
+        <a href = 'genetic.html' ><strong>Genetic Algorithm </strong></a>
+        <a href = 'Astar.html'><strong>A* Algorithm </strong></a>
+        <a href = 'Cluster.html'><strong>Cluster Algorithm </strong></a>
+        <a href = 'antbasic.html'><strong>Ant basic Algorithm</strong></a>
+        <a href = 'ant.html' ><strong>Ant+ Algorithm </strong></a>
+    </div>
+    <div id="form-container">
+        <div id="my-form">
+            <input type="file" id="csv-file" accept=".csv"/>
+            <label id="file-label" class="btn" for="csv-file">Choose a file</label>
+            <br />
+            <button class="btn" type="button" onclick="readArray()">CREATE</button>
+        </div>
+        <div id="value-container">
+            <div id="valueText-container">
+                <div id="text">Target ID:</div>
+                <input id="id-value" class="value" type="text" value="0" autocomplete="off">
+            </div>
+            <div id="valueText-container">
+                <div id="text">Max depth:</div>
+                <input id="depth-value" class="value" type="text" value="10" autocomplete="off">
+            </div>
+        </div>
+        <div id="decision-container">
+            <input id="decision-value" class="value" type="text" value="" autocomplete="off">
+            <div id="btn-container">
+                <button id="btn-decision" class="btn" type="button" onclick="findDecision()">FIND</button>
+                <button id="btn-erase" class="btn" type="button" onclick="erase()">ERASE</button>
+            </div>
+        </div>
+    </div>
+    </body>
+     <svg id="svg-container" width="1000%" height="1000%">
+        
+     </svg>
+     <div id="div-container">
+        <div id="node-container">
+            <div class="nodeRow">
+
+            </div>
+        </div>
+     </div>
+</body>
+</html>

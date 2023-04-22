@@ -1,0 +1,7 @@
+hot,high,true,1,jan,0
+cool,normal,false,10,mar,1
+mild,high,false,17,may,1
+
+Rain,Hot,Normal,Strong,No
+
+https://prnt.sc/sDz1UJZd5Q6L

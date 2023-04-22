@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A*</title>
+    <link rel="stylesheet" href="AstarStyle.css">
+    <link rel="stylesheet" href="topnav.css">
+    <script src="AstarJS.js" defer></script>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="#home"> <strong>A* Algorithm</strong></a>
+        <a href = 'genetic.html' ><strong>Genetic Algorithm</strong></a>
+        <a href = 'Cluster.html'><strong>Cluster Algorithm</strong></a>
+        <a href = 'antbasic.html'><strong>Ant basic Algorithm</strong></a>
+        <a href = 'DecisionTree.html'><strong>Decision Tree Algorithm</strong></a>
+        <a href = 'ant.html' ><strong>Ant+ Algorithm </strong></a>
+    </div>
+    <div id="main-container">
+        <div id="display-container">
+            <div id="random-container">
+                <button id="random" class="btn" type="button" onclick="randomMatrix()">RANDOM</button>
+                <div id="unit-div" class="slider-container">
+                    <input id="size-slider" class="slider" type="range" min="1" max="100" value="30" autocomplete="off">
+                    <input id="size-value" class="value" type="text" value="30" autocomplete="off">
+                </div>
+                <div id="unit-div" class="slider-container">
+                    <input id="random-slider" class="slider" type="range" min="0" max="100" value="30" autocomplete="off">
+                    <input id="random-value" class="value" type="text" value="30" autocomplete="off">
+                </div>
+                <button id="maze" class="btn" type="button" onclick="mazeMatrix()">MAZE</button>
+            </div>
+            <div id="color-container">
+                <button id="btn-wall" class="btn-color" type="button" onclick="drawWall()"></button>
+                <button id="btn-space" class="btn-color" type="button" onclick="drawSpace()"></button>
+                <button id="btn-point" class="btn-color" type="button" onclick="drawPoint()"></button>
+            </div>
+            <button class="btn" type="button" onclick="drawPath()">START</button>
+            <button id="btn-erase" class="btn" type="button" onclick="erase()">ERASE</button>
+        </div>
+        <div class="container">
+
+        </div>
+    </div>
+</body>
+</html>

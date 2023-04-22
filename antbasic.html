@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>antbasic Algorithm</title>
+    <link rel="stylesheet" href="antbasic.css">
+    <script src="antbasic.js" defer></script>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="#home"> <strong> Ant basic Algorithm </strong></a>
+        <a href = 'genetic.html' ><strong>Genetic Algorithm </strong></a>
+        <a href = 'Astar.html'><strong>A* Algorithm </strong></a>
+        <a href = 'Cluster.html'><strong>Cluster Algorithm </strong></a>
+        <a href = 'ant.html'><strong>Ant+ Algorithm</strong></a>
+        <a href = 'DecisionTree.html'><strong>Decision tree Algorithm</strong></a>
+      </div>
+    <div id="main-container">
+        <div id="display-container">
+            <div id="random-container">
+                <div id="alpha" class="titler"> alpha value</div>
+                <div id="alphaS" class="slider-container">
+                    <input id="alphaSlider" class="slider" type="range" min="1" max="10" value="3" autocomplete="off">
+                    <input id="alphaValue" class="value" type="text" value="3" autocomplete="off">
+                </div>
+                <div id="beta" class="titler"> beta value</div>
+                <div id="betaS" class="slider-container">
+                    <input id="betaSlider" class="slider" type="range" min="1" max="10" value="2" autocomplete="off">
+                    <input id="betaValue" class="value" type="text" value="2" autocomplete="off">
+                </div>
+                <div id="gamma" class="titler"> gamma value</div>
+                <div id="gammaS" class="slider-container">
+                    <input id="gammaSlider" class="slider" type="range" min="1" max="10" value="1" autocomplete="off">
+                    <input id="gammaValue" class="value" type="text" value="1" autocomplete="off">
+                </div>
+                <div id="iterations" class="titler"> iterations count</div>
+                <div id="iterationsS" class="slider-container">
+                    <input id="iterationsSlider" class="slider" type="range" min="100" max="10000" value="100" autocomplete="off">
+                    <input id="iterationsValue" class="value" type="text" value="100" autocomplete="off">
+                </div>
+                <div id="pheromones" class="titler"> pheromones delay</div>
+                <div id="pheromonesS" class="slider-container">
+                    <input id="pheromonesSlider" class="slider" type="range" min="1" max="100" value="50" autocomplete="off">
+                    <input id="pheromonesValue" class="value" type="text" value="0.5" autocomplete="off">
+                </div>
+            </div>
+            <button class="btn" type="button" onclick="StartBottom()">START</button>
+            <button id="btn-erase" class="btn" type="button" onclick="ClearBottom()">ERASE</button>
+        </div>
+        <div class="parent">
+            <div class="canvas_block" id="canv">
+                <canvas id="canvas"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
