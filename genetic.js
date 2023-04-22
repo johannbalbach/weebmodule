@@ -90,10 +90,21 @@ let istherevertices = false;
 canvas.addEventListener('mousedown', function(e) {
   const xinteger = e.clientX - canvas.offsetLeft;
   const yinteger =e.clientY - canvas.offsetTop;
-  vertices.push({xinteger, yinteger});
-  ctx.beginPath();
-  ctx.arc(xinteger, yinteger, 10, 0, Math.PI*2);
-  ctx.fill()
+  let checker = true;
+  for (let i = 0; i<vertices.length; ++i)
+  {
+    if ((xinteger === vertices[i].x) && (yinteger === vertices[i].y))
+    {
+      checker = false;
+    }
+  }
+  if (checker)
+  {
+    vertices.push({xinteger, yinteger});
+    ctx.beginPath();
+    ctx.arc(xinteger, yinteger, 10, 0, Math.PI*2);
+    ctx.fill()
+  }
 });
 
 function getRandomInt(max) {

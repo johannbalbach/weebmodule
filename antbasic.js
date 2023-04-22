@@ -92,11 +92,22 @@ canvas.addEventListener('mousedown', function(e) {
     const x = e.offsetX;
     const y = e.offsetY;
     //console.log(e.clientX, canvas.offsetLeft, e.clientY, canvas.offsetTop, e.offsetX, e.offsetY);
-    let tempVertices = new vertice(x, y);
-    vertices.push(tempVertices);
-    ctx.beginPath();
-    ctx.arc(x, y, verticesSize, 0, Math.PI*2);
-    ctx.fill()
+    let checker = true;
+    for (let i = 0; i<vertices.length; ++i)
+    {
+      if ((xinteger === vertices[i].x) && (yinteger === vertices[i].y))
+      {
+        checker = false;
+      }
+    }
+    if (checker)
+    {
+        let tempVertices = new vertice(x, y);
+        vertices.push(tempVertices);
+        ctx.beginPath();
+        ctx.arc(x, y, verticesSize, 0, Math.PI*2);
+        ctx.fill()
+    }
   });
 
 class vertice{

@@ -8,7 +8,7 @@
     src: url('fonts/CenturyGothic-Italic.ttf'); /*URL to font*/
 }
 body{
-    background-color: #E0E0E0;
+    background-color: rgb(252, 252, 252);
     display: flex;
     justify-content: center;
     align-items: center;

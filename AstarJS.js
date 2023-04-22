@@ -357,8 +357,8 @@ function createMaze(width, height) {
     carvePassages(x, y, arr)
 
     if(random > 0){
-        for(var i=0; i<width; i++){
-            for(var j=0; j<height; j++){
+        for(let i=0; i<width; i++){
+            for(let j=0; j<height; j++){
                 if(arr[i][j]===1)
                     if(Math.floor(Math.random() * 100) < random)
                         arr[i][j] = 0
