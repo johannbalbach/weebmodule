@@ -216,7 +216,7 @@ function GetPointsValue(x, y, NeighbourCells, goingHome)
         
         if (goingHome)
         {
-            if (Cells[NeighbourCells[i].x][NeighbourCells[i].y].homePheromoneDistance != 0 && Cells[NeighbourCells[i].x][NeighbourCells[i].y].homePheromone > 0)
+            if (Cells[NeighbourCells[i].x][NeighbourCells[i].y].homePheromoneDistance != 0)
             {
                 if (distance != 0)
                 {
@@ -226,7 +226,7 @@ function GetPointsValue(x, y, NeighbourCells, goingHome)
         }
         else
         {
-            if (Cells[NeighbourCells[i].x][NeighbourCells[i].y].foodPheromoneDistance != 0 && Cells[NeighbourCells[i].x][NeighbourCells[i].y].foodPheromone > 0)
+            if (Cells[NeighbourCells[i].x][NeighbourCells[i].y].foodPheromoneDistance != 0)
             {
                 if (distance != 0)
                 {
@@ -335,7 +335,7 @@ function GetPointsValue(x, y, NeighbourCells, goingHome)
                 else
                 {
                     if (goingHome){
-                        if (Cells[NeighbourCells[i].x][NeighbourCells[i].y].homePheromoneDistance!= 0 && distance != 0 && Cells[NeighbourCells[i].x][NeighbourCells[i].y].homePheromone > 0)
+                        if (Cells[NeighbourCells[i].x][NeighbourCells[i].y].homePheromoneDistance!= 0 && distance != 0)
                         {
                             CellsChances.push(((1/(Cells[NeighbourCells[i].x][NeighbourCells[i].y].homePheromoneDistance))*(1/distance))/(ChancesSum));
                         }
@@ -344,7 +344,7 @@ function GetPointsValue(x, y, NeighbourCells, goingHome)
                         }
                     }
                     else{
-                        if (Cells[NeighbourCells[i].x][NeighbourCells[i].y].foodPheromoneDistance!= 0 && distance != 0 && Cells[NeighbourCells[i].x][NeighbourCells[i].y].foodPheromone > 0)
+                        if (Cells[NeighbourCells[i].x][NeighbourCells[i].y].foodPheromoneDistance!= 0 && distance != 0)
                         {
                             CellsChances.push(((1/(Cells[NeighbourCells[i].x][NeighbourCells[i].y].foodPheromoneDistance))*(1/distance))/(ChancesSum));
                         }
@@ -363,7 +363,7 @@ function GetPointsValue(x, y, NeighbourCells, goingHome)
                 else
                 {
                     if (goingHome){
-                        if (Cells[NeighbourCells[i].x][NeighbourCells[i].y].homePheromoneDistance!= 0 && distance != 0 && Cells[NeighbourCells[i].x][NeighbourCells[i].y].homePheromone > 0)
+                        if (Cells[NeighbourCells[i].x][NeighbourCells[i].y].homePheromoneDistance!= 0 && distance != 0)
                         {
                             CellsChances.push(((1/(Cells[NeighbourCells[i].x][NeighbourCells[i].y].homePheromoneDistance))*(1/distance))/(ChancesSum));
                         }
@@ -372,7 +372,7 @@ function GetPointsValue(x, y, NeighbourCells, goingHome)
                         }
                     }
                     else{
-                        if (Cells[NeighbourCells[i].x][NeighbourCells[i].y].foodPheromoneDistance!= 0 && distance != 0 && Cells[NeighbourCells[i].x][NeighbourCells[i].y].foodPheromone > 0)
+                        if (Cells[NeighbourCells[i].x][NeighbourCells[i].y].foodPheromoneDistance!= 0 && distance != 0)
                         {
                             CellsChances.push(((1/(Cells[NeighbourCells[i].x][NeighbourCells[i].y].foodPheromoneDistance))*(1/distance))/(ChancesSum));
                         }
@@ -385,7 +385,7 @@ function GetPointsValue(x, y, NeighbourCells, goingHome)
             else
             {
                 if (goingHome){
-                    if (Cells[NeighbourCells[i].x][NeighbourCells[i].y].homePheromoneDistance!= 0 && distance != 0 && Cells[NeighbourCells[i].x][NeighbourCells[i].y].homePheromone > 0)
+                    if (Cells[NeighbourCells[i].x][NeighbourCells[i].y].homePheromoneDistance!= 0 && distance != 0)
                     {
                         CellsChances.push(((1/(Cells[NeighbourCells[i].x][NeighbourCells[i].y].homePheromoneDistance))*(1/distance))/(ChancesSum));
                     }
@@ -394,7 +394,7 @@ function GetPointsValue(x, y, NeighbourCells, goingHome)
                     }
                 }
                 else{
-                    if (Cells[NeighbourCells[i].x][NeighbourCells[i].y].foodPheromoneDistance!= 0 && distance != 0 && Cells[NeighbourCells[i].x][NeighbourCells[i].y].foodPheromone > 0)
+                    if (Cells[NeighbourCells[i].x][NeighbourCells[i].y].foodPheromoneDistance!= 0 && distance != 0)
                     {
                         CellsChances.push(((1/(Cells[NeighbourCells[i].x][NeighbourCells[i].y].foodPheromoneDistance))*(1/distance))/(ChancesSum));
                     }
